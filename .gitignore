@@ -1,0 +1,33 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*.pyd
+
+# Virtual environment
+.venv/
+venv/
+
+# Training outputs
+runs/
+outputs/
+checkpoints/
+
+# Model weights
+*.pt
+*.pth
+*.onnx
+
+# Dataset
+datasets/
+data/raw/
+
+# IDE
+.vscode/
+.idea/
+
+# System
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
