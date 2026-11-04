@@ -9,13 +9,16 @@ venv/
 
 # Training outputs
 runs/
-outputs/
 checkpoints/
 
 # Model weights
 *.pt
 *.pth
 *.onnx
+
+# Keep the model used by the application
+!weights/
+!weights/best.pt
 
 # Dataset
 datasets/
@@ -31,3 +34,7 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Temporary outputs
+outputs/temp/
+outputs/cache/
