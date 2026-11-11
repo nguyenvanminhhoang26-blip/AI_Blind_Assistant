@@ -37,8 +37,6 @@ Xác định vị trí tương đối của đối tượng trong khung hình:
 - Gần.
 - Rất gần.
 
-Đây là phương pháp ước lượng theo heuristic, không phải phép đo khoảng cách thực tế bằng mét.
-
 ### 3.4. Threat Assessment
 Đánh giá mức độ nguy hiểm dựa trên vị trí và khoảng cách tương đối:
 - Thấp.
@@ -77,7 +75,7 @@ Camera → Object Detection → Position Estimation → Distance Estimation → 
 - Phương pháp: Fine-tuning mô hình YOLOv8n pretrained trên SafeWalkBD.
 - File trọng số sử dụng: `best.pt`.
 
-**Lưu ý:** Đây là mô hình được fine-tune từ trọng số pretrained, không phải mô hình được xây dựng và huấn luyện hoàn toàn từ đầu.
+**Đây là mô hình được fine-tune từ trọng số pretrained
 
 ## 7. Cấu trúc dự án
 
@@ -181,7 +179,3 @@ Nhấn phím `Q` để thoát cửa sổ camera.
 - Cải thiện cơ chế lọc và quản lý cảnh báo.
 - Hoàn thiện giao diện và quy trình cài đặt.
 - Thực hiện đánh giá hiệu năng trên nhiều tình huống thực tế.
-
-## 11. Tác giả
-
-AI Blind Assistant – Dự án ứng dụng trí tuệ nhân tạo hỗ trợ người khiếm thị.
