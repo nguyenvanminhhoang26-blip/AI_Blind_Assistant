@@ -109,7 +109,7 @@ AI_Blind_Assistant/
 ### 8.1. Yêu cầu hệ thống
 
 - Windows 10/11 hoặc hệ điều hành tương thích.
-- Python 3.13.14 (phiên bản đã sử dụng trong môi trường phát triển).
+- Python 3.13.14.
 - Webcam nếu muốn chạy nhận diện trực tiếp.
 - GPU NVIDIA được khuyến nghị để tăng tốc xử lý.
 
