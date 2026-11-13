@@ -10,6 +10,15 @@ def open_camera(model):
     if not camera.isOpened():
         print("Khong the mo webcam")
         return
+    window_name = "AI Blind Assistant - Camera"
+
+    cv2.namedWindow(window_name, cv2.WINDOW_NORMAL)
+
+    cv2.setWindowProperty(
+        window_name,
+        cv2.WND_PROP_FULLSCREEN,
+        cv2.WINDOW_FULLSCREEN
+    )
     alert_manager = AlertManager(cooldown=3,confidence_threshold=0.5)
     temporal_filter = TemporalFilter(history_size=5)
     initialize_audio()
@@ -55,9 +64,7 @@ def open_camera(model):
                 2
             )
 
-        display_frame = cv2.resize(display_frame, (960, 540))
-
-        cv2.imshow("AI Blind Assistant - Camera", display_frame)
+        cv2.imshow(window_name, display_frame)
 
         if cv2.waitKey(1) & 0xFF == ord("q"):
             break
@@ -150,5 +157,6 @@ if __name__ == "__main__":
 
     VIDEO_PATH = ROOT_DIR / "videos" / "video_test.mp4"
 
-    open_video(str(VIDEO_PATH), model)
-    # open_camera(model)
+    # open_video(str(VIDEO_PATH), model)
+    open_camera(model)
+    
